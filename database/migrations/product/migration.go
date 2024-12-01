@@ -1,7 +1,7 @@
 package product
 
 import (
-	"go-gin/database/models/product"
+	"github.com/pius-microservices/piopos-database/database/models/product"
 	"log"
 
 	"github.com/spf13/cobra"

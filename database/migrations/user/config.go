@@ -2,7 +2,7 @@ package user
 
 import (
 	"fmt"
-	envConfig "go-gin/config"
+	envConfig "github.com/pius-microservices/piopos-database/config"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

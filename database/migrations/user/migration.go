@@ -1,7 +1,7 @@
 package user
 
 import (
-	"go-gin/database/models/user"
+	"github.com/pius-microservices/piopos-database/database/models/user"
 	"log"
 
 	"github.com/spf13/cobra"

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-gin/cmd"
+	"github.com/pius-microservices/piopos-database/cmd"
 	"log"
 	"os"
 )

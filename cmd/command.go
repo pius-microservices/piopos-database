@@ -1,8 +1,10 @@
 package cmd
 
 import (
-	"go-gin/database/migrations/product"
-	"go-gin/database/migrations/user"
+	"github.com/pius-microservices/piopos-database/database/migrations/product"
+	"github.com/pius-microservices/piopos-database/database/migrations/user"
+
+	userSeed "github.com/pius-microservices/piopos-database/database/seed/user"
 
 	"github.com/spf13/cobra"
 )
@@ -15,6 +17,8 @@ var initCommand = cobra.Command{
 func init() {
 	initCommand.AddCommand(user.UserMigrationCMD)
 	initCommand.AddCommand(product.ProductMigrationCMD)
+
+	initCommand.AddCommand(userSeed.UserSeedCMD)
 }
 
 func Run(args []string) error {
