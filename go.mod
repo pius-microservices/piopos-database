@@ -1,4 +1,4 @@
-module go-gin
+module github.com/pius-microservices/piopos-database
 
 go 1.23.1
 
