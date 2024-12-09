@@ -31,12 +31,12 @@ func dbMigrate(cmd *cobra.Command, args []string) error {
 
 	if migDown {
 		log.Println("User DB migration down done")
-		return db.Migrator().DropTable(&user.Role{}, &user.User{})
+		return db.Migrator().DropTable(&user.Role{}, &user.User{}, &user.RefreshToken{})
 	}
 
 	if migUp {
 		log.Println("User DB migration up done")
-		return db.AutoMigrate(&user.Role{}, &user.User{})
+		return db.AutoMigrate(&user.Role{}, &user.User{}, &user.RefreshToken{})
 	}
 
 	return nil
